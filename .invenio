@@ -1,0 +1,44 @@
+[cli]
+flavour = RDM
+logfile = /logs/invenio-cli.log
+javascript_package_manager = pnpm
+
+[cookiecutter]
+project_name = GELF test
+project_shortname = gelf-test
+package_name = gelf_test
+project_site = gelf-test.com
+author_name = CERN
+author_email = info@gelf-test.com
+year = 2026
+file_storage = local
+development_tools = yes
+site_code = yes
+base_image = debian
+use_reduced_vocabs = yes
+_template = https://github.com/inveniosoftware/cookiecutter-invenio-rdm.git
+_output_dir = /Users/m/temp
+_repo_dir = /Users/m/.cookiecutters/cookiecutter-invenio-rdm
+_checkout = v14.0
+database = postgresql
+search = opensearch2
+
+[files]
+app_data = {'vocabularies': {'cc_licences.csv': '19a8bfd2488c7adb90d1dbe1c70f57cf2e0a737cb11814cc814f917072843de7', 'languages.yaml': 'd3bdb59940e8e6cd2401785ad55733f5fc6a1fb0bb0a2005a8fe4e5148e5f286', 'names.yaml': '6dc80984186ec960bcf53fbb6c482554d0aaf386d345bf82f504fdbd896e5848', 'subjects_oecd_fos.yaml': 'eef38714c506d956193c3be17e6004049525d252bf22424f4804dfc1ad46db44'}, 'README.md': 'd58978488626bdeddc791a15a39e341a4ed06f202b84d0c0d4aa9ef49481c6d9', 'vocabularies.yaml': '5e5bbc729dd79c43342f9c97ccec9fcde8e73baf3393fd6c1fc5cc1d0cb76327', 'pages': {'.gitkeep': '22818f8c9f68fb11b7ca893ad1c082f844ae9f691f082d2174e32738d9ae6114'}}
+docker = {'nginx': {'test.crt': '87de178d46f81af9e9b9819a9a1179bd56902c5d438cd1f4a3c6beb33a20a141', 'Dockerfile': '541326766beaba2e8492255c99e11aa76640d71329ceab5bcab1c8d6a979bd5c', 'test.key': 'bbb6f1727ed5d5725625f7c98e2840586f0a39fd4faab34365743a8cc752ab9b', 'nginx.conf': '7ba045f9e5c94cbbe96653c0b2fdc0b58951642d488d5fcae1ace3eeca9253c0', 'conf.d': {'default.conf': 'c41b1d32026e2cf6c575698aa2bcd11dc342fa4083dfc95ea441b328282f241b'}}, 'pgadmin': {'servers.json': '0c13867f4acc89efb9cc7fde30bd47b6dadaa5f6db763093b009607e7d3f181b'}, 'uwsgi': {'uwsgi_rest.ini': '4e5391e997f667cb1fb5c7c38423d784bb982d9bb2979991fe4d49abe4f1448a', 'uwsgi_ui.ini': 'dc4895a5ee08fd96366cde4670a8825af7677da1471e5e52671d2d85fe7c2957'}}
+invenio.cfg = f79b5fea2e8972d666bba2b271d27c6749d0ff99b2c402b72908e25cca304e14
+docker-services.yml = 88715e62c87374a533966cb018fe92c37dc2aaa767dafc2a55fd40bf0aebe2e2
+dockerfile = e4209e39de70997c1cf06d5bfadc2330bba596cb9ff850db20f964f6095efcfb
+pyproject.toml = fcef611956144fa0990a2ba054d68c9b0998b148f12d6a65e4f761c1139f2de4
+readme.md = 3abe6b5d0d6bc49241050c7238bfc6652a38edd89c1d7f7c00f81c096c49aaca
+.dockerignore = 21241bc12cdf4ac5f209d6b191adc8f25eb89af93ce5c4c3f72c86661162d7b5
+.gitignore = af1182c70588e583daeb35809e6cdfe3408425d438c3ceb282b1f4b8360290e2
+static = {'images': {'invenio-rdm.svg': '50f09b4d83244a69c58f44aa436a3fa097726d9b47fd0e0782ea92d31f854b65', 'logo-invenio-white.svg': '5af2c7b67a09798cba3d50cc2e811ca9fd2ff73b40d9d2a52a97237b9ed44008'}}
+wipe_recreate.sh = 31f82e63242e7072665ebc9c8b7e831a9c5485c9de78e7c7d5e550be945d424b
+docker-compose.full.yml = fa881f99138af90c8e5ecac5db07850e7165a78ff29a8676c70cbf494c677335
+site = {'gelf_test': {'webpack.py': '49674c417553ac44e42e1bcd0a88775f0892b505143f0c4c2fca9ef6da40b19b', '__init__.py': 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', 'templates': {'semantic-ui': {'gelf_test': {'.gitkeep': 'd4756cdf68d94c670c924f9d57d44718f666e457727701486435b57a97e52c5f'}}}, 'assets': {'semantic-ui': {'less': {'gelf_test': {'.gitkeep': 'de96a61fec5b6b168bced6dda58bd11e353f618ae9bee45aad9253cb0d6c5617'}}, 'js': {'gelf_test': {'.gitkeep': '3253a6fe7fc74a1279fb374e67ffd3383eded63cd28c4877afd77dffc8cc5da4'}}}}, 'views.py': 'e009afbe7ce2db101f1a1dfe97fc3f17a289ab3f358313eefe07187fc91b8c09'}, 'pyproject.toml': '5faf87d5cb98d25edc3a97431bf72ebebb2d7f50e9104019b2137932bd6bc036', '.gitkeep': 'ba0f5ca6667ef0f23c819d40d95cb310d952067676511d4f5d81cb7fa5dc85b0', 'tests': {'.gitkeep': 'd4756cdf68d94c670c924f9d57d44718f666e457727701486435b57a97e52c5f'}}
+templates = {'.gitkeep': 'd4756cdf68d94c670c924f9d57d44718f666e457727701486435b57a97e52c5f'}
+docker-compose.yml = d04d6bdefe1a15c94712cce9ba766d8269f9a29c21ff19f907f76b55e9213d0f
+assets = {'less': {'theme.config': '776c5d3a68e06568faceabc9d672c6ad80e3f8a6be6eeee580165bb9981d8255', 'site': {'globals': {'site.variables': 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', 'site.overrides': 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'}}}, 'js': {'invenio_app_rdm': {'overridableRegistry': {'mapping.js': '973243a58326788f608c0c887dd68b751f53159f864923c5da95258caa632985'}}}, 'templates': {'custom_fields': {'.gitkeep': 'd4756cdf68d94c670c924f9d57d44718f666e457727701486435b57a97e52c5f'}, 'search': {'.gitkeep': 'd4756cdf68d94c670c924f9d57d44718f666e457727701486435b57a97e52c5f'}}}
+translations = {'babel.ini': '3fb6bff73460aa031d4f90fc1e1d16235cab84d2385c9831efacb2ce32e5409b'}
+

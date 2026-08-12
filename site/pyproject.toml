@@ -1,0 +1,29 @@
+[project]
+name = "gelf-test"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">= 3.14"
+
+[project.entry-points."invenio_base.blueprints"]
+gelf_test_views = "gelf_test.views:create_blueprint"
+
+[project.entry-points."invenio_assets.webpack"]
+gelf_test_theme = "gelf_test.webpack:theme"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["gelf_test"]
+
+[tool.isort]
+profile = "black"
+
+[tool.pydocstyle]
+add_ignore = ["D401", "D403"]
+
+[tool.pytest.ini_options]
+addopts = ["--isort", "--pydocstyle", "--doctest-glob=\"*.rst\"", "--doctest-modules", "--cov=gelf_test", "--cov-report=term-missing", "--exclude-warning-annotations"]
+testpaths = "tests gelf_test"
+live_server_scope = "module"
